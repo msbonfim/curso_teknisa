@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema de Cadastro</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="app.js" defer> </script>
+	</head>
+	<body>
+        <div class="box">
+            <form action = "">
+                <header class="titulo"> <h3>Peça seu orçamento agora mesmo!</h3> </header>
+                
+                <br></br>
+                <div class="box2">
+                    <div class="inputbox">
+                        
+                        <input type="text" name="Nome"  id="name"
+                        class="LabelInput"  required>
+                        <label>Nome</label>
+                        <span class="error"></span>
+                    </div>
+                    <br></br>
+                    <div class="inputbox">
+                        
+                        <input type="email" name="email"  id="email"
+                        class="LabelInput" required >
+                        <label>E-mail                        </label>
+                        <span class="error"></span>
+
+                    </div>
+                </div>
+                <div class="box2">
+                    
+                    <div class="inputbox">
+                        
+                        <input type="number" name="Telefone"  id="telefone"
+                        class="LabelInput" required >
+                        <label>Telefone</label>
+                        <span class="error"></span>
+                    </div>
+                    <br></br>
+                    <div class="inputbox">
+                        
+                        <select type="select" id="servico" required class="LabelInput3">
+                            
+                            <option class="padrao" disabled selected>Escolha o serviço que deseja</option>
+                            <option>Desenvolvimento de Sites</option>
+                            <option>Gestão de Blog</option>
+                            <option>Gestão de Redes Sociais</option>
+                            <option>Identidade Visual e Outros Serviços</option>
+                            <option>Links Patrocinados</option>
+                            <option>SEO (Otimização de Sites)</option>
+                            
+                            
+                        </select>
+                        <span class="error"></span>
+                        
+                    </div>
+                </div>
+
+                    <br></br>
+
+                    <div class="inputbox2">
+                       
+                        <textarea type="textarea" row="6" id="mensagem" name="mensagem" placeholder="Mensagem" required class="LabelInput2"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <br></br>
+
+                    <button class="botao" type="submit">Enviar</button>
+
+
+
+            </form>
+        </div>
+	</body>
+</html>
